@@ -1,0 +1,214 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: small;
+}
+
+.header_first {
+  display: flex;
+  gap: 8px;
+}
+.header_first .header_tabs {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.header_info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.header_info .header_cart {
+  transition: all 0.5s ease;
+}
+.header_info .header_cart.animar {
+  animation: escalar 1s 1 linear;
+}
+.header_info .header_cart svg:hover {
+  fill: tomato;
+  animation: escalar 1s 1 linear;
+}
+
+.user_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  right: 0px;
+  top: 80px;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 400;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2rem;
+  background-color: rgb(245, 246, 249);
+}
+
+.user_modal_visible {
+  display: flex;
+}
+
+.cart_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 25rem;
+  background-color: white;
+  border-left: 1px solid black;
+}
+.cart_modal .cart_modal_holder {
+  padding: 1rem;
+}
+.cart_modal .cart_modal_holder .cart_modal_top {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_modal .cart_modal_holder .cart_modal_content {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+}
+.cart_modal .cart_modal_holder .cart_modal_content p {
+  color: rgb(151, 151, 151);
+  font-style: italic;
+  font-weight: 200;
+}
+
+.cart_modal_visible {
+  display: block;
+}
+
+@keyframes escalar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+nav .nav_tabs {
+  display: flex;
+}
+nav .nav_info {
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+nav .nav_info .nav_info_main {
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gallery .gallery_filters {
+  display: flex;
+}
+.gallery .gallery_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gallery .gallery_main .gallery_card {
+  position: relative;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.gallery .gallery_main .gallery_card .card_image {
+  max-width: 100%;
+  height: auto;
+}
+.gallery .gallery_main .gallery_card .gallery_card_info {
+  border-top: 1px solid black;
+  padding: 1rem;
+}
+.gallery .gallery_main .gallery_card .gallery_card_info a {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .gallery_main .gallery_card .card_add {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  background-color: rgb(245, 246, 249);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.gallery .gallery_main .gallery_card .card_add_visible {
+  display: flex;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: rgb(245, 246, 249);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  background-color: rgb(245, 246, 249);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: small;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.item_modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(128, 128, 128, 0.414);
+}
+.item_modal .modal_window {
+  background-color: white;
+  border: 1px solid black;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+.item_modal .modal_window .modal_window_picture img {
+  height: 100%;
+}
+.item_modal .modal_window .modal_window_close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.item_modal_visible {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+nav {
+    .nav_tabs {
+        display: flex;
+    }
+    .nav_info {
+        margin: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .nav_info_main {
+            font-size: 64px;
+            font-weight: 400;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

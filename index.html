@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <title>Document</title>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <!--HEADER-->
+        <header class="header">
+            <div class="header_first">
+                <div class="header_logo">
+                    <img src="assets/img/logo act.svg" alt="CST">
+                </div>
+                <div class="header_tabs">
+                    <div class="tab_element">
+                        <a href="">Ropa</a>
+                    </div>
+                    <div class="tab_element">
+                        <a href="">Calzado</a>
+                    </div>
+                    <div class="tab_element">
+                        <a href="">Accesorios</a>
+                    </div>
+                    <div class="tab_element">
+                        <a href="">About</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_info">
+                <div class="header_user">
+                    <button id="user_button" class="user_button">Usuario</button>
+                </div>
+                <div class="header_cart">
+                    <button id="cart_button" class="cart_button">Tu cesta (0)</button>
+                </div>
+            </div>
+            <div id="header_user_modal" class="user_modal">
+                <div class="modal_element">Mi área de socio</div>
+                <div class="modal_element">Perfil</div>
+                <div class="modal_element">Mis favoritos</div>
+                <div class="modal_element">Mis pedidos</div>
+                <div class="modal_element">Configuración</div>
+            </div>
+            <div id="header_cart_modal" class="cart_modal">
+                <div class="cart_modal_holder">
+                    <div class="cart_modal_top">
+                        <h3>Tu cesta</h3>
+                        <button id="cart_close" class="close">
+                            <img src="assets/img/close.svg" alt="close">
+                        </button>
+
+                    </div>
+                    <div class="cart_modal_content">
+                        <p>
+                            Tu cesta está vacía
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--/header-->
+
+        <!--NAV-->
+        <nav class="nav">
+            <div class="nav_tabs"></div>
+            <div class="nav_info">
+                <h1 class="nav_info_main">Camisetas</h1>
+                26 pieces
+            </div>
+        </nav>
+        <!--nav-->
+
+        <!--GALLERY-->
+        <gallery class="gallery">
+            <div class="gallery_filters"></div>
+            <div class="gallery_main" id="gallery_main">
+                <div class="gallery_card">
+                    <img class="card_image" src="assets/img/dos calices.jpg" alt="">
+                    <div class="gallery_card_info">
+                        <a href="">
+                            <div class="item_name">Copas antiguas</div>
+                            <div class="item_price">59,99€</div>
+                        </a>
+                    </div>
+                    <button id="card_add" class="card_add">
+                        <img src="assets/img/carrito.svg" alt="add to cart">
+                    </button>
+                </div>
+                <div class="gallery_card">
+                    <img class="card_image" src="assets/img/dos calices.jpg" alt="">
+                    <div class="gallery_card_info">
+                        <a href="">
+                            <div class="item_name">Nombre item</div>
+                            <div class="item_price">Precio</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_card">
+                    <img class="card_image" src="assets/img/dos calices.jpg" alt="">
+                    <div class="gallery_card_info">
+                        <a href="">
+                            <div class="item_name">Nombre item</div>
+                            <div class="item_price">Precio</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_card">
+                    <img class="card_image" src="assets/img/dos calices.jpg" alt="">
+                    <div class="gallery_card_info">
+                        <a href="">
+                            <div class="item_name">Nombre item</div>
+                            <div class="item_price">Precio</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_card">
+                    <img class="card_image" src="assets/img/dos calices.jpg" alt="">
+                    <div class="gallery_card_info">
+                        <a href="">
+                            <div class="item_name">Nombre item</div>
+                            <div class="item_price">Precio</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_card">
+                    <img class="card_image" src="assets/img/dos calices.jpg" alt="">
+                    <div class="gallery_card_info">
+                        <a href="">
+                            <div class="item_name">Nombre item</div>
+                            <div class="item_price">Precio</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_card">
+                    <img class="card_image" src="assets/img/dos calices.jpg" alt="">
+                    <div class="gallery_card_info">
+                        <a href="">
+                            <div class="item_name">Nombre item</div>
+                            <div class="item_price">Precio</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_card">
+                    <img class="card_image" src="assets/img/dos calices.jpg" alt="">
+                    <div class="gallery_card_info">
+                        <a href="">
+                            <div class="item_name">Nombre item</div>
+                            <div class="item_price">Precio</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </gallery>
+        <!--/gallery-->
+
+        <!--MODAL-->
+        <modal id="item_modal" class="item_modal item_modal_visible">
+            <div class="modal_window">
+                <div class="modal_window_picture">
+                    <img src="assets/img/dos calices.jpg" alt="Imagen del producto">
+                </div>
+                <div class="modal_window_info">
+                    <h2>Objeto Extraño</h2>
+                    <p></p>
+                    <div class="modal_window_cta">
+                        <button>Añadir a la cesta</button>
+                    </div>
+                </div>
+                <button id="modal_window_close" class="modal_window_close">
+                    <img src="assets/img/close.svg" alt="cerrar">
+                </button>
+            </div>
+        </modal>
+        <!--/modal-->
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="footer_info"></div>
+            <div class="footer_links"></div>
+        </footer>
+        <!--/footer-->
+    </body>
+</html>
